@@ -64,8 +64,7 @@ def remove_unique_occurrences(names):
 
 # Create fancy looking HTML representation
 def generate_html(words):
-    page = ""
-    page += f"<html><head><title>word bubbles</title></head><body style=\"background: #242424; color: #d9d9d9\">"
+    page = f"<html><head><title>word bubbles</title></head><body style=\"background: #242424; color: #d9d9d9\">"
 
     for word in words.keys():
         word_bubble = f"<div style=\"float:left;font-size:{words[word]}0pt;padding:10px;\">{word}</div>"
