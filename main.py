@@ -59,10 +59,10 @@ def remove_unique_occurences(names):
 # Create fancy looking HTML representation
 def generate_html(words):
     page = ""
-    page += "<html><head><title>word bubbles</title></head><body>"
+    page += f"<html><head><title>word bubbles</title></head><body style=\"background: #242424; color: #d9d9d9\">"
 
     for word in words.keys():
-        word_bubble = f"<div style=\"float:left;font-size:{words[word]}0pt\">{word}</div>"
+        word_bubble = f"<div style=\"float:left;font-size:{words[word]}0pt;padding:10px;\">{word}</div>"
         page += word_bubble
 
     page += "</body></html>"
@@ -70,5 +70,5 @@ def generate_html(words):
 
 
 if __name__ == '__main__':
-    test_path = "/Users/nykon/Development/ecommerce-bay/backend/src/main/kotlin"
+    test_path = "/Users/rainerknabenbauer/Development/echo-core/src/main/kotlin"
     run()
