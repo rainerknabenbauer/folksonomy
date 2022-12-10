@@ -16,12 +16,20 @@ def read_path():
 def filter_declarations(line):
     words = line.split()
 
-    if words.length > 0:
+    # gather all class names that start with .kt
+    # create set [word, count]
+    # count every occurrence
+    #   Maybe at the end: model, entity, .. ? combine
+
+    if len(words) > 0:
         first_word = words[0]
         match first_word:
             case "package":
                 return ""
             case "import":
+                return ""
+        match first_word[:1]:
+            case "@":
                 return ""
     return line
 
@@ -38,7 +46,8 @@ def count_words(path):
 
             with open(absolut_file_path) as file:
                 filtered_list = filter(filter_declarations, file.readlines())
-                print(f"filtered list: {filtered_list}")
+                print(f"filtered list:")
+                print(*filtered_list, "\n")
 
 
         print("-----------------------")
