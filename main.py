@@ -7,6 +7,7 @@ def run():
     path = read_path()
     names = collect_names(path)
     count_occurrences_in_classes(path, names)
+    remove_unique_occurences(names)
     print(names)
 
 
@@ -23,7 +24,7 @@ def collect_names(path):
     for root, dirs, files in os.walk(path):
         for filename in files:
             class_name_without_filetype = filename.rsplit(".")[0]
-            names[class_name_without_filetype] = 1
+            names[class_name_without_filetype] = 0
     return names
 
 
@@ -47,6 +48,15 @@ def count_words(words, lines):
             if word in words:
                 count = words[word] + 1
                 words[word] = count
+
+
+# Sanitize output
+
+def remove_unique_occurences(names):
+    base_dict = dict(names)
+    for key in base_dict.keys():
+        if names[key] <= 1:
+            del names[key]
 
 
 if __name__ == '__main__':
