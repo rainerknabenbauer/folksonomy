@@ -29,8 +29,9 @@ def collect_names(path):
     names = {}
     for root, dirs, files in os.walk(path):
         for filename in files:
-            class_name_without_filetype = filename.rsplit(".")[0]
-            names[class_name_without_filetype] = 0
+            if "." in filename:
+                class_name_without_filetype = filename.rsplit(".")[0]
+                names[class_name_without_filetype] = 0
     return names
 
 
