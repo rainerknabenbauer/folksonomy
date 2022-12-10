@@ -5,10 +5,13 @@ def run():
     print("Count word occurrences in a directory tree.")
     print("To learn more about your domain in a Kotlin project, select project/src/main/kotlin")
     path = read_path()
+    print(path)
     names = collect_names(path)
     count_occurrences_in_classes(path, names)
     remove_unique_occurences(names)
     print(names)
+    page = generate_html(names)
+    print(page)
 
 
 def read_path():
@@ -16,9 +19,7 @@ def read_path():
     return absolut_path if absolut_path != "" else test_path
 
 
-# Stage 1: Collect all class names
-
-
+# Collect all class names
 def collect_names(path):
     names = {}
     for root, dirs, files in os.walk(path):
@@ -28,13 +29,10 @@ def collect_names(path):
     return names
 
 
-# Stage 2: Count all mentions of a class
-
-
+# Count all mentions of a class
 def count_occurrences_in_classes(path, words):
     for root, dirs, files in os.walk(path):
         for filename in files:
-
             absolut_file_path = os.path.join(root, filename)
 
             with open(absolut_file_path) as file:
@@ -51,7 +49,6 @@ def count_words(words, lines):
 
 
 # Sanitize output
-
 def remove_unique_occurences(names):
     base_dict = dict(names)
     for key in base_dict.keys():
@@ -59,7 +56,19 @@ def remove_unique_occurences(names):
             del names[key]
 
 
+# Create fancy looking HTML representation
+def generate_html(words):
+    page = ""
+    page += "<html><head><title>word bubbles</title></head><body>"
+
+    for word in words.keys():
+        word_bubble = f"<div style=\"float:left;font-size:{words[word]}0pt\">{word}</div>"
+        page += word_bubble
+
+    page += "</body></html>"
+    return page
+
+
 if __name__ == '__main__':
     test_path = "/Users/nykon/Development/ecommerce-bay/backend/src/main/kotlin"
     run()
-
