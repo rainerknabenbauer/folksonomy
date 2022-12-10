@@ -2,16 +2,23 @@ import os
 
 
 def run():
-    print("Count word occurrences in a directory tree.")
-    print("To learn more about your domain in a Kotlin project, select project/src/main/kotlin")
+    print_welcome()
     path = read_path()
     print(path)
     names = collect_names(path)
     count_occurrences_in_classes(path, names)
     remove_unique_occurences(names)
-    print(names)
+    print()
     page = generate_html(names)
+    print("Copy the below code into a _.html file:")
     print(page)
+
+
+def print_welcome():
+    print()
+    print("Count word occurrences in a directory tree.")
+    print("To learn more about your domain in a Kotlin project, select project/src/main/kotlin")
+    print()
 
 
 def read_path():
@@ -70,5 +77,6 @@ def generate_html(words):
 
 
 if __name__ == '__main__':
-    test_path = "/Users/rainerknabenbauer/Development/echo-core/src/main/kotlin"
+    # set default path during development
+    test_path = ""
     run()
