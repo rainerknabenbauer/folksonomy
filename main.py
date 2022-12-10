@@ -8,10 +8,8 @@ def run():
     names = collect_names(path)
     count_occurrences_in_classes(path, names)
     remove_unique_occurences(names)
-    print()
     page = generate_html(names)
-    print("Copy the below code into a _.html file:")
-    print(page)
+    print_results(page)
 
 
 def print_welcome():
@@ -74,6 +72,12 @@ def generate_html(words):
 
     page += "</body></html>"
     return page
+
+
+def print_results(page):
+    print()
+    print("Copy the below code into a _.html file:")
+    print(page)
 
 
 if __name__ == '__main__':
