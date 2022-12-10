@@ -5,7 +5,6 @@ def run():
     print("Count word occurrences in a directory tree.")
     print("To understand more about your domain, select /src folder.")
     path = read_path()
-    asdf
     count_words(path)
 
 
