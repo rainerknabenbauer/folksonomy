@@ -7,7 +7,7 @@ def run():
     print(path)
     names = collect_names(path)
     count_occurrences_in_classes(path, names)
-    remove_unique_occurences(names)
+    remove_unique_occurrences(names)
     page = generate_html(names)
     print_results(page)
 
@@ -55,7 +55,7 @@ def count_words(words, lines):
 
 
 # Sanitize output
-def remove_unique_occurences(names):
+def remove_unique_occurrences(names):
     base_dict = dict(names)
     for key in base_dict.keys():
         if names[key] <= 1:
