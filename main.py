@@ -5,7 +5,17 @@ def run():
     print("Count word occurrences in a directory tree.")
     print("To learn more about your domain in a Kotlin project, select project/src/main/kotlin")
     path = read_path()
-    count_words(path)
+    names = collect_names(path)
+    print(names)
+    # count_words(path)
+
+
+def collect_names(path):
+    names = set()
+    for root, dirs, files in os.walk(path):
+        for filename in files:
+            names.add(filename.rsplit(".")[0])
+    return names
 
 
 def read_path():
@@ -48,7 +58,6 @@ def count_words(path):
                 filtered_list = filter(filter_declarations, file.readlines())
                 print(f"filtered list:")
                 print(*filtered_list, "\n")
-
 
         print("-----------------------")
 
