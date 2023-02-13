@@ -33,7 +33,7 @@ def create_report(report):
 
 
 if __name__ == '__main__':
-    # Maybe you noticed that this is just an 'if' and not actually a function()?
+    # Maybe you noticed that this part is just an 'if' and not actually a function()?
     # Let's talk about 'scope' and why 'url' is behaving like a 'global variable'
     url = "https://pagespeedonline.googleapis.com/pagespeedonline/v5/runPagespeed?url=https://dental21.de"
     run()
