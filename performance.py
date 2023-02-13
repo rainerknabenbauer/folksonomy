@@ -2,12 +2,12 @@ import json
 import requests
 
 
-def run():   # See how clean my run() is? Always try to keep this one clean
+def run():   # See how clean my run() is? Always try to keep run() clean
     print_welcome()
     performance_report = query_performance()    # see below on how to do 'return' values
     create_report(performance_report)
 
-# see how the order in run() reflects the order you find the methods() below? Easy to read : ) 
+# see how the order in run() reflects the order you find the methods() below? Easy to read : )
 
 
 def print_welcome():   # it's always a good idea to tell people how your application works
