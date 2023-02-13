@@ -2,10 +2,10 @@ import json
 import requests
 
 
-def print_welcome():   # it's always a good idea to tell people how this works
+def print_welcome():   # it's always a good idea to tell people how your application works
     print("Create your performance reports with ease.")
     print("Please enter the domain in a format like www.dental21.de")
-    # I skip asking for input, this is just an example on how to write good software : )
+    # I skip asking for input, this is just an example on how to write well structured software : )
 
 
 def query_performance():
