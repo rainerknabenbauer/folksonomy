@@ -3,6 +3,7 @@ import json
 
 
 # THIS TIME WE'RE LOOKING AT ⋅.˳˳loop .⋅ॱ˙ ⋅.˳˳loop .⋅ॱ˙ ⋅.˳˳loop .⋅ॱ˙ ⋅.˳˳loop .⋅ॱ˙
+# Start on the bottom and walk your way through ~
 
 
 def run():
