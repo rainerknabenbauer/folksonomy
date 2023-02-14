@@ -1,4 +1,3 @@
-# read URL of the website
 import requests
 import json
 
