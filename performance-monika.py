@@ -6,7 +6,12 @@ import json
 def run():
     print_welcome()
     performance_report = query_performance()
-    create_report_desktop(performance_report)
+
+    performance_report_mobile = performance_report[0]
+    performance_report_desktop = performance_report[1]
+
+    print(performance_report_desktop)
+    # create_report_desktop(performance_report_desktop)
 
 
 def print_welcome():
