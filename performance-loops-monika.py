@@ -2,8 +2,10 @@ import requests
 import json
 
 
-# THIS TIME WE'RE LOOKING AT ⋅.˳˳loop .⋅ॱ˙ ⋅.˳˳loop .⋅ॱ˙ ⋅.˳˳loop .⋅ॱ˙ ⋅.˳˳loop .⋅ॱ˙
-# Start on the bottom and walk your way through ~
+# ⋅.˳˳loop .⋅ॱ˙ ⋅.˳˳loop .⋅ॱ˙ ⋅.˳˳loop .⋅ॱ˙ ⋅.˳˳loop .⋅ॱ˙
+# We learn about arrays and how to use for-loops.
+# Start on the bottom and walk your way through.
+# ⋅.˳˳loop .⋅ॱ˙ ⋅.˳˳loop .⋅ॱ˙ ⋅.˳˳loop .⋅ॱ˙ ⋅.˳˳loop .⋅ॱ˙
 
 
 def run():
