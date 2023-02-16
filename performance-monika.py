@@ -7,11 +7,7 @@ def run():
     print_welcome()
     performance_report = query_performance()
 
-    performance_report_mobile = performance_report[0]
-    performance_report_desktop = performance_report[1]
-
-    print(performance_report_desktop)
-    # create_report_desktop(performance_report_desktop)
+    print("I am not one but actually " + len(performance_report).__str__())
 
 
 def print_welcome():
