@@ -9,8 +9,7 @@ import csv
 
 def run():
     print_welcome()
-    # website_url = read_user_input()
-    website_url = 'https://dental21.de'
+    website_url = read_user_input()
     csv_file_name = prepare_csv_file()
     for strategy in strategies:
         strategy_specific_url = build_full_url(website_url, strategy)
