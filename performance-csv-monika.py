@@ -42,7 +42,9 @@ def prepare_csv_file():
 
 
 def file_is_empty(path):
-    return os.stat(path).st_size == 0   # I use the operating system (import os) to check if the file is empty
+    # I use the operating system (import os) to check if the file is empty
+    # The function returns TRUE or FALSE
+    return os.stat(path).st_size == 0
 
 
 def build_full_url(website_url, strategy):
