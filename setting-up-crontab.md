@@ -19,7 +19,7 @@ export VISUAL="$EDITOR"
 
 ![Alt text](./image/make-nano-default.png "what zshrc looks like")
 
-$${\color{red}You need to close and reopen Terminal completely so the change takes effect!}$$
+$${\color{red}You \space need \space to \space close \space and \space reopen \space Terminal \space completely \space so \space the \space change \space takes \space effect!}$$
 
 ## Setting up a cron job on Mac
 
