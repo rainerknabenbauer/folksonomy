@@ -19,7 +19,7 @@ export VISUAL="$EDITOR"
 
 ![Alt text](./image/make-nano-default.png "what zshrc looks like")
 
-<mark>You need to close and reopen Terminal completely so the change takes effect!</mark>
+$${\color{red}You need to close and reopen Terminal completely so the change takes effect!}$$
 
 ## Setting up a cron job on Mac
 
@@ -64,7 +64,7 @@ And that's it ☺️ Well, almost. DON'T FORGET TO DELETE THE CRONJOB AGAIN othe
 
 ### Run performance tests
 
-<mark>Only continue if you refactored the script to read the URL from command line!</mark>
+$${\color{yellow}Only continue if you refactored the script to read the URL from command line!}$$
 
 1. Open Terminal
 2. Enter `crontab -e` to see a probably empty screen
