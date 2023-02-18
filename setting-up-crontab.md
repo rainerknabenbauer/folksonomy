@@ -49,9 +49,9 @@ This one is just as easy - we only need to add a single line to crontab!
 5. Show all active cron jobs with `crontab -l`
 
 #### Dissecting the cron job
-`*/1 * * * *` This means run it `every minute`
-`/usr/local/bin/python3` Tell cron where to find `Python`
-`/Users/nykon/../crontab-test.py` Tell cron where to find `your script`  
+`*/1 * * * *` This means run it `every minute`\
+`/usr/local/bin/python3` Tell cron where to find `Python`\
+`/Users/nykon/../crontab-test.py` Tell cron where to find `your script`\
 As you see we always use absolute paths for cronjobs!
 
 #### Does it really run?
