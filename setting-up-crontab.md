@@ -64,7 +64,7 @@ And that's it ☺️ Well, almost. DON'T FORGET TO DELETE THE CRONJOB AGAIN othe
 
 ### Run performance tests
 
-$${\color{yellow}Only continue if you refactored the script to read the URL from command line!}$$
+$${\color{green}Only \space continue \space if \space you \space refactored \space the \space script \space to \space read \space the \space URL \space from \space command \space line!}$$
 
 1. Open Terminal
 2. Enter `crontab -e` to see a probably empty screen
